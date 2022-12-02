@@ -1,0 +1,47 @@
+body {
+  background-color: beige;
+  text-align: center;
+}
+.flex-container {
+  border: thin solid #f00;
+  background-color: #ccc;
+  padding: 20px;
+  display: flex;
+  /*  flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+
+  width: 80vw;
+  height: 600px;
+  margin: 0 auto;
+}
+.caja {
+  border: medium solid #000;
+  background-color: #fff;
+  color: #000;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: 200px;
+  /* height: 120px; */
+  line-height: 200px;
+  text-align: center;
+  margin: 5px;
+}
+.c1 {
+  background-color: #ff0;
+  order: 1;
+  flex-grow: 1; /* Con esta propiedad distribuyo el tamaño de las cajas */
+  flex-basis: 50%; /*  es como sile colocaramos un width */
+}
+.c2 {
+  background-color: #00f;
+  order: 3;
+  flex-grow: 1;
+}
+.c3 {
+  background-color: #f00;
+  order: 0;
+  flex-grow: 1;
+}
